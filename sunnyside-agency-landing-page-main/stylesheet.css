@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+nav{
+   position: absolute;
+   padding: 5%;
+   display: flex;
+   
+     
+}
+.navlinks ul{
+   
+    flex: 1;
+    justify-content: end;
+    margin-left:35em ;
+    
+   
+}
+.navlinks ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+        
+}
+
+
+.navlinks ul li a{
+    text-decoration: none;
+    display: flex;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px; 
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    
+        
+}
+
+.navlinks ul li a:hover{
+    color:  hsl(7, 99%, 70%);
+    transition: .5s;
+    zoom: 120%;
+
+}
+
+.navlinks ul button{
+    padding: 6px 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color:transparent ;
+    border: 1px solid white;
+   
+}
+
+nav h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin: -10px 0;
+}
+
+.frame{
+    width: 100%;
+    height: 100%;
+}
+
+.frame img{
+    max-width: 100%;
+    height: auto;
+         
+}
+
+ .frame i{
+     display: flex;
+     position:absolute;
+     top: 300px;
+     left: 50%;
+   
+ }
+ i{
+     color: white;
+     font-size: 70px;
+     font-stretch: extra-condensed;
+           
+ }
+ .frame h1{
+     position: absolute;
+     top: 200px;
+     left: 30%;
+     font-size: 50px;
+     color: white;
+     font-family: 'Acme', sans-serif;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+ }
+
+ .cover{
+     display: flex;
+ }
+
+ .transform, .transform-img {
+     flex-basis: 50%;
+       
+ }
+
+ .transform-img img{
+     width: 100%;
+     
+ }
+ .transform h2 { 
+     margin-top: 100px;
+     color: hsl(212, 27%, 19%);
+     font-size: 35px;
+     font-family: 'Fraunces', serif;
+     font-weight: 900;
+     display: block;
+     max-width: 370px;
+     margin-left: 100px;
+        
+ }
+ 
+ .transform p{
+     margin-top: 20px;
+     display: inline-block;
+     margin-left: 10px;
+     font-size: 18px;
+     font-family: 'Playfair Display', serif;
+     margin-bottom: 20px;
+     max-width: 450px;
+     margin-left: 100px;
+     color:    hsl(232, 10%, 55%);
+     
+ }
+
+ .transform li a{
+     margin-left: 100px;
+     text-transform: uppercase;
+     color:  hsl(212, 27%, 19%);
+     font-weight: bold;
+     font-family: 'Playfair Display', serif;
+     cursor: pointer;
+      
+ }
+ .transform li a:hover{
+     text-decoration: underline hsl(51, 100%, 49%);
+ }
+
+ .transform a{
+     text-decoration: none;
+     
+ }
+ .transform li{
+     list-style-type: none;
+ }
+
+ .packer{
+     width: 100%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+     
+ }
+ .design h3{
+     position: absolute;
+     display: block;
+     margin-top: -200px;
+     margin-left: 200px;
+     color: hsl(167, 40%, 24%);
+     text-transform: capitalize;
+     font-family: 'Fraunces', serif;
+ }
+
+ .design p{
+     position: absolute;
+     display: block;
+     margin-top: -150px;
+     max-width: 350px;
+     margin-left: 100px;
+     color: hsl(167, 40%, 24%);
+     text-align: center;
+     font-family: 'Fraunces', serif;
+    
+ }
+ .design img{
+     position: relative;
+    
+ }
+
+ .photography h3{
+    position: absolute;
+    display: block;
+    margin-top: -200px;
+    margin-left: 200px;
+    color: hsl(198, 62%, 26%);
+    text-transform: capitalize;
+    font-family: 'Fraunces', serif;
+
+ }
+ .photography p{
+    position: absolute;
+    display: block;
+    margin-top: -150px;
+    max-width: 350px;
+    margin-left: 100px;
+    color: hsl(198, 62%, 26%);
+    text-align: center;
+    font-family: 'Fraunces', serif;
+ }
+
+ .packer img{
+     width: 100%;
+ }
+
+ .gallery{
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+ }
+
+ .gallery img{
+     width: 100%;
+     cursor: pointer;
+ }
+
+ .heading{
+     margin-top: 100px;
+ }
+ .heading h2{
+     text-align: center;
+     color:hsl(210, 4%, 67%) ;
+     text-transform: uppercase;
+     font-family: 'Fraunces', serif;
+     font-size: 20px;
+ }
+
+ .testimonials{
+     width: 100%;
+     display: flex;
+     margin-top: 100px;
+     margin-bottom: 100px;
+
+ }
+ .test{
+     flex-basis: 30%;
+     justify-content: space-between;
+     margin-left: 70px;
+     display: inline-block;
+     text-align: center;
+     
+ }
+ .test img{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     margin-bottom: 30px;
+     
+ }
+
+ .test p{
+     color:hsl(212, 27%, 19%);
+     font-family: 'Fraunces', serif;
+     margin-bottom: 20px;
+ }
+
+ .test h4{
+     color:hsl(212, 27%, 19%) ;
+     font-size: 18px;
+     font-family: 'Playfair Display', serif;
+ }
+
+ .test h6{
+     color: hsl(210, 4%, 67%) ;
+     font-size: 12px;
+     font-family: 'Playfair Display', serif;
+ }
+ footer{
+    background: rgb(145,211,197);
+    text-align: center;
+ }
+ 
+ .down h1{
+     color: hsl(167, 40%, 24%);
+         
+ }
+ .footer-links  {
+    
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+ }
+
+  .down .footer-links li  {
+    list-style-type: none;
+              
+ }
+ .footer-links li a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    padding: 25px;
+      
+ }
+
+ .icons{
+     margin-top: 50px;
+     margin-bottom: 50px;
+     
+ }
+ .icons img{
+     padding: 10px;
+ }
+
+   @media screen and (min-width: 1200px)  {
+    body{
+        width: 100%;
+    }
+    .navlinks{
+        margin-top: 25px;
+    }
+    .navlinks h1{
+        margin-top: 3px;
+        font-size: 35px;
+    }
+    /* .navlinks ul{
+   
+        justify-content:end;
+        margin-left:15em ;  
+    } */
+    .navlinks ul li{
+        display: inline-block;
+               
+    }
+    
+    .navlinks ul li a{
+        font-size: 15px; 
+              
+    }
+    .navlinks ul button{
+        
+        border-radius: 15px;
+        outline: none;
+        
+       
+    }
+    /* .transform h2 { 
+        max-width: 400px;
+        margin-left: 70px;
+               
+    }
+    
+    .transform p{
+        margin-top: 10px;   
+        margin-bottom: 5px;
+        max-width: 400px;
+        margin-left: 10px;
+        
+    }
+    .transform li a{
+        margin-left: 10px;
+    }
+     */
+    
+     /* .frame i{
+         display: flex;
+         position:absolute;
+         top: 350px;
+         left: 50%;
+       
+     } 
+     i{
+         color: white;
+         font-size: 80px;
+             
+     } */
+     /* .frame h1{
+         
+         top: 300px;
+         left: 40%;
+         font-size: 40px;
+     } */
+       
+ } 
+
+ @media screen and (min-width: 768px){
+    body{
+        max-width: 100%;
+
+    }
+     .navlinks ul{
+   
+        flex: 1;
+        justify-content:center;
+           
+    }
+    .navlinks ul li{
+        display: inline-block;        
+    } 
+  
+    .frame img{
+        width: 100%;
+                
+    }
+    .frame{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* .transform h2 { 
+        max-width: 300px;
+        margin-left: 10px;
+        margin-top:30px;
+               
+    }
+    
+     .transform p{
+        margin-top: 10px;   
+        margin-bottom: 5px;
+        max-width: 400px;
+        margin-left: 10px;
+        
+    } 
+    .transform li a{
+        margin-left: 10px;
+    }  */
+ 
+    .design h3{
+       
+        margin-top: -140px;
+        margin-left: 130px;
+        
+    }
+    .design p{
+        
+        margin-top: -100px;
+        max-width: 350px;
+        margin-left: 20px;
+       
+    }
+   
+    .photography h3{ 
+       margin-top: -140px;
+       margin-left: 130px;
+       
+    }
+    .photography p{ 
+       margin-top: -100px;
+       max-width: 350px;
+       margin-left: 20px;
+       color: hsl(198, 62%, 26%);
+       text-align: center;
+    } 
+    .gallery{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+   
+    .gallery img{
+        width: 100%;
+        cursor: pointer;
+    }      
+}  
+
+@media screen and (min-width: 320px){
+
+}
